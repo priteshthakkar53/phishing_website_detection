@@ -1,0 +1,25 @@
+body{
+	background-color: lightgrey;
+	margin: 150px;
+}
+
+.content{
+	text-align: center;
+	font-weight: bold;
+	font-size: xx-large;
+}
+
+.info{
+	text-align: center;
+	font-size: x-large;
+}
+
+.footer{
+	text-align: center;
+	font-size: x-large;
+}
+
+.button{
+	width:10%;
+	height: 30px;
+}

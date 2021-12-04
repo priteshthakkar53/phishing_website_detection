@@ -1,0 +1,26 @@
+{
+  "name": "PhishMaster",
+  "description": "Blocks phishing websites to provide safe browsing",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "PhishMaster.html",
+    "default_icon": "fish_hook.png"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "content_scripts" : [
+    {
+      "matches": ["*://*/*"],
+      "js":  ["content.js"],
+      "run_at": "document_start" //document_start - after css, document_end - after DOM 
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage"
+  ]
+}
